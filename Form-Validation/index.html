@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Form Validation using javascript</h1>
+        <div class="form">
+            <label>UserName</label>
+            <input type="text" name="user-name" id="user-name">
+            <div class="error-message">
+                <span class="length-name error-message hide">Minimum 5 characters</span>
+            </div>
+            <label>E-mail</label>
+            <input type="email" name="user-email" id="user-email">
+            <div class="error-message">
+                <span class="email-error error-message hide"> Wrong Email.</span>
+            </div>
+            <label>Number</label>
+            <input type="number" name="user-number" id="user-number">
+            <div class="error-message">
+                <span class="length-number error-message hide"> 10 digits only</span>
+            </div>
+            <label>Password</label>
+            <input type="password" name="user-psw" id="user-psw">
+            <div class="error-message">
+                <span class="length-msg error-message hide">Minimum 8 characters.</span>
+                <span class="lower-msg error-message hide">at least one lower case.</span>
+                <span class="upper-msg error-message hide">at least one upper case.</span>
+                <span class="digit-msg error-message hide">at least one digit.</span>
+                <span class="char-msg error-message hide">at least one Special characters.</span>
+            </div>
+            <label>Confirm Password</label>
+            <input type="password" name="user-cpsw" id="user-cpsw">
+            <div class="error-message">
+                <span class="cpsw-matched error-message hide"> Password not matched.</span>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

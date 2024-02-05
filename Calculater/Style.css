@@ -1,0 +1,123 @@
+body{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    max-width: 80vh;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.conatiner-head {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f80909;
+    margin-bottom: 2rem;
+}
+
+.input-box{
+    width: 60vh;
+    height: 5rem;
+    display: flex;
+    
+}
+
+
+.inputBox {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black;
+    overflow: hidden;
+    text-wrap: nowrap;;
+
+}
+
+.buttons {
+    width: 30rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    font-weight: bold;
+
+}
+
+.btn:active {
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+
+#btn_00,#btn_dot,#btn_eql,#btn_0 {
+    grid-row-start: 5;
+}
+
+#btn_1,#btn_2,#btn_3 {
+    grid-row-start: 4;
+}
+
+#btn_4,#btn_5,#btn_6 {
+    grid-row-start: 3;
+}
+
+#btn_7,#btn_8,#btn_9, #btn_sub {
+    grid-row-start: 2;
+}
+
+ #btn_cler, #btn_remov, #btn_sub{
+    grid-row-start: 1;
+}
+
+#btn_eql {
+    grid-column-end: 5;
+    background-color: rgb(31, 31, 248);
+    color: white;
+}
+
+#btn_del {
+    background-color: red;
+    font-size: 1.5rem;
+    width: 15%;
+}
+
+#btn_add {
+    grid-row-start: 5;
+    grid-row-end: 3;
+
+}
+.btn {
+    border: 1px solid black;
+    background-color: rgb(230, 233, 236);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+#btn_eql:active {
+    background-color: rgba(2, 2, 247, 0.587);
+}
+
+#btn_del:active {
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    width: 15%;
+
+}
+
+
+.btn:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="search">
+    <input type="text" id="search-text" placeholder="search"/> <input type="submit" id="search" value="search">
+</div>
+    <!-- Adding new user -->
+    <div class="main">
+        <form class="user-form hide">
+            <h1>Add User Information</h1>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            <input type="text" name="mobile" id="mobile" pattern="\d*" maxlength="10" placeholder="Mobile" required>
+            <input type="date" name="birthDate" id="birthDate" placeholder="BirthDate" required>
+            <textarea name="address" id="address" placeholder="Address"required></textarea>
+            <input type="text" name="city" id="city" placeholder="city" required>
+            <input type="text" name="pincode" pattern="\d*" id="pincode" placeholder="PIN Code" maxlength="6" required>
+            <input type="text" name="state" id="state" placeholder="state" required>
+            <input type="text" name="country" id="country" placeholder="country" required>
+            <input type="submit" value="submit" id="submit" class="submit">
+            <input type="submit" value="update" id="update" class="update">
+        </form>
+    </div>
+
+
+    <!-- Display the User -->
+    <div class="user-data">
+        <div class="head">
+            <h1> Users Information </h1>
+            <button class="btn-add">+ Add User</button>
+        </div>
+
+        <table>
+            <tr>
+                <th>User Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+                <th>Mobile</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>PIN Code</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Buttons</th>
+            </tr>
+            
+
+        </table>
+    </div>
+
+    <div class="not-found hide">
+        <h1>Data Not Found</h1>
+        <button class="btn-add-fist">Add First User</button>
+
+    </div>
+
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>

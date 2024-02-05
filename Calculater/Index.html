@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="conatiner-head">Calculator</h1>
+        <div class="input-box">
+            <div name="inputBox" class="inputBox" id="inputBox">0</div>       
+        </div>
+        <div class="buttons">
+            <button class="btn" id="btn_1" onclick="btnNumber('1')">1</button>
+            <button class="btn" id="btn_2" onclick="btnNumber('2')">2</button>
+            <button class="btn" id="btn_3" onclick="btnNumber('3')">3</button>
+            <button class="btn" id="btn_4" onclick="btnNumber('4')">4</button>
+            <button class="btn" id="btn_5" onclick="btnNumber('5')">5</button>
+            <button class="btn" id="btn_6" onclick="btnNumber('6')">6</button>
+            <button class="btn" id="btn_7" onclick="btnNumber('7')">7</button>
+            <button class="btn" id="btn_8" onclick="btnNumber('8')">8</button>
+            <button class="btn" id="btn_9" onclick="btnNumber('9')">9</button>
+            <button class="btn" id="btn_0" onclick="btnNumber('0')">0</button>
+            <button class="btn" id="btn_00" onclick="btnNumber('00')">00</button>
+            <button class="btn" id="btn_mul" onclick="btnNumber('*')">*</button>
+            <button class="btn" id="btn_sum" onclick="btnNumber('-')">-</button>
+            <button class="btn" id="btn_div" onclick="btnNumber('/')">/</button>
+            <button class="btn" id="btn_eql" onclick="btnNumber('=')">=</button>
+            <button class="btn" id="btn_add" onclick="btnNumber('+')">+</button>
+            <button class="btn" id="btn_dot" onclick="btnNumber('.')">.</button>
+            <button class="btn" id="btn_remov" onclick="removeOne()">C</button>
+            <button class="btn" id="btn_cler" onclick="clare()">AC</button>
+        </div>
+    </div>
+</body>
+</html>

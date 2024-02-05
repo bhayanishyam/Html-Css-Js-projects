@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="title">2048 Game</div>
+        <div class="divider"></div>
+        <p>Score : <span  id="score">0</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High Score : <span  id="high-score">0</span> </p>
+        
+        <div class="playground">
+        </div>
+        <button class="restart">Restart</button>
+    </div>
+
+    <div class="wrapper hide">
+    <div class="close">X</div>
+    </div>
+    <div class="game-over hide">
+        <h1>Game Over</h1>
+        <p class="msg hide"> Congratulation !!!</p>
+        <p>Your Score is :<span id="final-score"></span></p>
+    </div>
+</body>
+
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz using HTMl, CSS and JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+    <button class="start">Start Quiz</button>
+    <div class="container hide">
+        <div class="top">
+            <div class="quiz-title"> HTML Quiz </div>
+            <div class="timer"><span id="minutes">10</span>:<span id="seconds">00</span></div>
+        </div>
+
+<div class="quiz-body">
+
+            <div class="question" id="question">question</div>
+            
+                <ul class="options-list" id="optionsList">
+                    <li id="option1" class="option">5</li>
+                    <li id="option2" class="option">1</li>
+                    <li id="option3" class="option">3</li>
+                    <li id="option4" class="option">6</li>
+                </ul>
+            
+
+        </div>
+
+        <div class="footer">
+            <div class="current-question"> <span id="questionNumber">0</span> of <span id="quizLength">0</span> question</div>
+            <button class="pre" id="pre">Pre</button>
+            <button class="next" id="next">Next</button>
+        </div>
+
+    </div>
+
+    <div class="result hide">
+        <h1>Result</h1>
+        <p class="current-score">Score : <span id="score"></span></p>
+        <p class="congrs hide">Congratulation you set new Height Score. 🎉🎉</p>
+        <button class="restart">Restart</button>
+    </div>
+</body>
+<script type="text/JavaScript" src="script.js"></script>
+
+</html>
